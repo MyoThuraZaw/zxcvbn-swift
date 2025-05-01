@@ -390,6 +390,7 @@ class Scoring {
     }
 
     func unwind(n: Int, optimal: Optimal) -> [Match] {
+        guard n >= 1 else { return [] }
         var optimalMatchSequence = [Match]()
         var k = n - 1
         var l: Int? = nil
